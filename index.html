@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>WWW Timeline</title>
+  </head>
+
+  <body bgcolor="#282C34">
+    <style>
+      body {
+        max-width: 500px;
+        min-width: none;
+        margin-left: auto;
+        margin-right: auto;
+
+        font-family: "Poppins", sans-serif;
+      }
+
+      #home {
+        text-align: center;
+        background-color: #21252b;
+        border-radius: 12px;
+        padding: 10px;
+      }
+
+      h1 {
+        color: #43a3ef;
+      }
+
+      h6 {
+        color: #A074C4;
+        margin-top: -20px;
+      }
+
+      .link {
+        color: #98c379;
+        margin-bottom: -10px;
+      }
+
+      #timeline {
+        margin-top: 10px;
+      }
+
+      #line {
+        border-left: 2px solid white;
+      }
+
+      .era {
+        text-align: right;
+        font-style: italic;
+        color: #d19a66;
+      }
+
+      #content {
+        border-radius: 12px;
+        background-color: #21252b;
+        margin: 0 0 20px 20px;
+        padding: 5px 10px 5px 10px;
+      }
+
+      #title {
+        color: #e06c75;
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 10px;
+      }
+
+      .title {
+        font-size: 22px;
+      }
+
+      .info {
+        color: #abb2bf;
+        margin: 0 5px 10px 10px;
+      }
+
+      #img {
+        display: flex;
+        justify-content: center;
+      }
+
+      img {
+        border-radius: 12px;
+        height: 250px;
+        width: auto;
+        margin-bottom: 10px;
+      }
+    </style>
+
+    <div id="home">
+      <h1>World Wide Web Timeline</h1>
+      <h6>by Coré Husaí Martínez Belmonte</h6>
+      <a href="#arpa"><h3 class="link">ARPA</h3></a> <br />
+      <a href="#arpanet"><h3 class="link">ARPAnet</h3></a> <br />
+      <a href="#sql"><h3 class="link">SQL</h3></a> <br />
+      <a href="#tcp"><h3 class="link">TCP/IP</h3></a> <br />
+      <a href="#osi"><h3 class="link">OSI</h3></a> <br />
+      <a href="#web1"><h3 class="link">Web 1.0</h3></a> <br />
+      <a href="#web2"><h3 class="link">Web 2.0</h3></a> <br />
+      <a href="#web3"><h3 class="link">Web 3.0</h3></a> <br />
+      <a href="#web4"><h3 class="link">Web 4.0</h3></a> <br />
+    </div>
+
+    <div id="timeline">
+      <div id="line">
+        <!-- #region Era militar -->
+        <h5 class="era">Era militar | 1945 - 1970</h5>
+
+        <div id="content">
+          <a name="arpa"></a>
+          <div id="title">
+            <span class="title"><strong>Hola, ARPA</strong></span>
+            <span>1957</span>
+          </div>
+          <p class="info">
+            Creación de ARPA (Advanced Research Projects Agency).
+          </p>
+        </div>
+
+        <div id="content">
+          <a name="conmutar"></a>
+          <div id="title">
+            <span class="title"><strong>Conmutación de paquetes</strong></span>
+            <span>1961</span>
+          </div>
+          <div id="img">
+            <img src="img/lk.jpg" />
+          </div>
+          <p class="info">
+            Leonard Kleinrock teorizó que se podían conmutar los paquetes.
+          </p>
+        </div>
+
+        <div id="content">
+          <a name="arpanet"></a>
+          <div id="title">
+            <span class="title"><strong>Inicia ARPAnet</strong></span>
+            <span>1969</span>
+          </div>
+          <p class="info">
+            Precursor de Internet. Tenía una arquitectura distribuida, ¿por?
+            Debía persistir ante un ataque nuclear.
+          </p>
+        </div>
+
+        <!-- #endregion -->
+
+        <!-- #region Era de los negocios -->
+        <h5 class="era">Era de los negocios | 1970 - 1980</h5>
+
+        <div id="content">
+          <a name="sql"></a>
+          <div id="title">
+            <span class="title"><strong>SQL en acción</strong></span>
+            <span>1978</span>
+          </div>
+          <p class="info">
+            Inicialmente como lenguaje de consulta, posteriormente ampliado con
+            construcciones de programación.
+          </p>
+        </div>
+
+        <!-- #endregion -->
+
+        <!-- #region Era de la PC -->
+        <h5 class="era">Era de la PC | 1980 - 1990</h5>
+
+        <div id="content">
+          <a name="tcp"></a>
+          <div id="title">
+            <span class="title"><strong>Aparece TCP/IP</strong></span>
+            <span>1982</span>
+          </div>
+          <div id="img">
+            <img src="img/tcp.webp" />
+          </div>
+          <p class="info">
+            Creación del protocolo TCP/IP, que ha sido usado hasta la
+            actualidad.
+          </p>
+        </div>
+
+        <div id="content">
+          <a name="osi"></a>
+          <div id="title">
+            <span class="title"><strong>OSI</strong></span>
+            <span>1989</span>
+          </div>
+          <p class="info">
+            Los protocolos OSI (Open Systems Interconnection) se integran a
+            ARPAnet.
+          </p>
+        </div>
+
+        <!-- #endregion -->
+
+        <!-- #region Web 1.0 -->
+        <h5 class="era">Web 1.0 | 1900 - 2000</h5>
+
+        <div id="content">
+          <a name="web1"></a>
+          <div id="title">
+            <span class="title"><strong>Adiós, ARPAnet</strong></span>
+            <span>1990</span>
+          </div>
+          <p class="info">
+            ARPAnet se desintegra, dando lugar a MILnet e Internet.
+          </p>
+        </div>
+
+        <div id="content">
+          <div id="title">
+            <span class="title"><strong>Llega WWW</strong></span>
+            <span>1991</span>
+          </div>
+          <div id="img">
+            <img src="img/tbl.jpg" />
+          </div>
+          <p class="info">
+            Tim Berners-Lee crea la World Wide Web, también conocida como WWW,
+            W3 o la Web. Además, propuso un sistema de hipertexto para compartir
+            documentos.
+          </p>
+        </div>
+
+        <!-- #endregion -->
+
+        <!-- #region Web 2.0 -->
+        <h5 class="era">Web 2.0 | 2000 - 2010</h5>
+
+        <div id="content">
+          <a name="web2"></a>
+          <div id="title">
+            <span class="title"><strong>Web 2.0</strong></span>
+            <span></span>
+          </div>
+          <p class="info">
+            Aparece la Web 2.0 que se preocupa en integrar a los usuarios con
+            las páginas, es decir, añade dinamismo a la Web 1.0. Su principal
+            preocupación es el usuario.
+          </p>
+        </div>
+
+        <div id="content">
+          <div id="title">
+            <span class="title"><strong>Demasiados usuarios</strong></span>
+            <span>2006</span>
+          </div>
+          <p class="info">
+            Internet alcanzó los 1,100 millones de usuarios, esperando que
+            superen los 2,000 millones.
+          </p>
+        </div>
+
+        <!-- #endregion -->
+
+        <!-- #region Web 3.0 y 4.0 -->
+        <h5 class="era">Web 3.0 y 4.0 | 2010 - Ahora</h5>
+
+        <div id="content">
+          <a name="web3"></a>
+          <div id="title">
+            <span class="title"><strong>Web 3.0</strong></span>
+            <span></span>
+          </div>
+          <div id="img">
+            <img src="img/web3.jfif" />
+          </div>
+          <p class="info">
+            Esta Web busca que su contenido pueda ser entendido por las máquinas
+            naturalmente, lo que facilita su búsqueda. Además, aparecen los
+            metadatos.
+          </p>
+        </div>
+
+        <div id="content">
+          <a name="web4"></a>
+          <div id="title">
+            <span class="title"><strong>Web 4.0</strong></span>
+            <span></span>
+          </div>
+          <div id="img">
+            <img src="img/web4.jpg" />
+          </div>
+          <p class="info">
+            Las máquinas inteligentes empiezan a integrarse, lo que significa
+            que la inteligencia artificial es su núcleo. Las búsquedas
+            personalizadas también se encuentran aquí.
+          </p>
+        </div>
+
+        <!-- #endregion -->
+      
+        <a href="#home"><h5 class="era">Regresar</h5></a>
+      </div>
+    </div>
+  </body>
+</html>
